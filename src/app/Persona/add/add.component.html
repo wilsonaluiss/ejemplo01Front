@@ -1,0 +1,22 @@
+<div class="container mt-3 col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center">Agregar Personas</h3>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input [(ngModel)]="modelPersona.nombre" name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input [(ngModel)]="modelPersona.apellidos" name="apellidos" type="text" class="form-control" id="apellidos" placeholder="apellidos">
+                    </div>
+
+                    <button (click)="Guardar(modelPersona)" class="btn btn-danger mt-3" >Agregar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
